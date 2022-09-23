@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  height:100%;
+  width:100%;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: 
+    "nb nb nb nb nb"
+    "sb pt pt pt pt"
+    "sb ct ct ct ct"
+    "sb ct ct ct ct"
+    "sb ct ct ct ct"
+    "sb ct ct ct ct"
+    "sb ct ct ct ct"
+    "sb ct ct ct ct"
+    "sb ct ct ct ct"
+    "sb ct ct ct ct"
+    "ft ft ft ft ft"
+}
+
+#navbar {
+  grid-area:nb;
+}
+
+#sidebar {
+  writing-mode: vertical-rl;
+  grid-area:sb;
+}
+
+#title {
+  grid-area:pt;
+}
+
+
+#content {
+  grid-area:ct;
+}
+
+#footer {
+  grid-area:ft;
+}
